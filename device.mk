@@ -334,6 +334,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	device/google/gs101/conf/fstab.persist:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.persist
 
+# Google
+PRODUCT_COPY_FILES += \
+    device/google/gs101/conf/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml \
+    device/google/gs101/conf/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
+
 # Shell scripts
 PRODUCT_COPY_FILES += \
         device/google/gs101/init.display.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.display.sh \
